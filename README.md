@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto es una solución para el Challenge Encriptador de Texto del curso Alura LATAM. El propósito de este desafío es desarrollar una aplicación web que encripte y desencripte mensajes usando reglas de sustitución simples. La aplicación permite a los usuarios ingresar un mensaje de texto y obtener una versión encriptada o desencriptada de ese mensaje. 
+Este proyecto es una solución para el Challenge Encriptador de Texto del curso Alura / ONE. El propósito de este desafío es desarrollar una aplicación web que encripte y desencripte mensajes usando reglas de sustitución simples. La aplicación permite a los usuarios ingresar un mensaje de texto y obtener una versión encriptada o desencriptada de ese mensaje. 
 
 Para este desafío elegí una temática moderna y limpia, con colores pasteles sobre fondos oscuros. 
 

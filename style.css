@@ -142,7 +142,7 @@ body {
 .inferior {
     width: 100vw;
     height: 74vh;
-    margin: 2vh 0 0vh 0;
+    margin-top: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,6 +220,7 @@ body {
 
 #input::placeholder {
     font-size: 1.2vw;
+    color: #c7c7c7;
 }
 
 .grid__input__ventana--explosion {
@@ -359,7 +360,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
+
 }
 
 .grid__output__ventana__top__img {
@@ -379,7 +380,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     white-space: normal;
-    word-wrap: break-word; 
+    word-wrap: break-word;
     overflow-wrap: break-word;
     font-family: var(--fuente-secundaria);
     color: var(--color-blanco);
@@ -431,7 +432,7 @@ body {
 /* Decoración */
 
 .decoracion {
-    position:absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     pointer-events: none;
@@ -494,3 +495,473 @@ body {
     height: auto;
 }
 
+/* Media Queries */
+
+
+
+/* Dispositivos Extra-Pequeños (teléfonos en modo retrato, menos de 576px) */
+@media (max-width: 575.98px) {
+
+    body {
+        border: 5px dashed lightsteelblue;
+    }
+
+}
+
+/* Dispositivos Pequeños (teléfonos en modo paisaje, 576px y más) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        border: 5px dashed lightseagreen;
+    }
+    
+    
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) {
+    .barra__superior__logo {
+        margin-top: 3vw;
+        height: 10vh;
+
+    }
+
+    .barra__superior__smiley {
+        margin-top: 3vw;
+        height: 10vh;
+    }
+
+    .grid {
+        height: 90%;
+    }
+
+    .grid__input__ventana {
+        width: 40vw;
+        height: 38vh;
+        left: 5vw;
+        bottom: 33vh;
+    }
+
+    .grid__input__ventana--explosion {
+        width: 12vw;
+    }
+
+    .grid__input__alerta {
+        top: 60%;
+        left: 25%;
+        width: 28vw;
+    }
+
+    .grid__input__area-botones {
+        left: 27%;
+        top: 75%;
+        gap: 20%;
+
+    }
+
+    .grid__input__area-botones--boton {
+        width: 11vw;
+    }
+
+    .grid__output__ventana {
+        width: 38vw;
+        height: 35vh;
+        left: 10%;
+        top: 22%;
+
+    }
+
+    .decoracion--2 {
+        left: 91vw;
+
+    }
+
+    .decoracion--3 {
+        left: 48vw;
+
+    }
+
+    .decoracion--4 {
+        left: 28vw;
+        top: 35vh;
+
+    }
+
+    .decoracion--5 {
+        left: 49vw;
+
+    }
+
+    .decoracion--6 {
+        left: 50vw;
+        top: 60vh;
+    }
+
+
+    .decoracion--7 {
+        left: 35vw;
+        top: 60vh;
+    }
+
+
+
+}
+
+/* Dispositivos Medianos (tabletas, 768px y más) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .superior {
+        height: 10vh;
+        margin: 0;
+    }
+
+    #barra__superior {
+        margin: 0;
+    }
+
+    .barra__superior__logo {
+        height: 7vh;
+        position: absolute;
+        z-index: 1;
+        top: 6vh;
+        left: 4vw;
+
+    }
+
+    .barra__superior__smiley {
+        display: none;
+
+    }
+
+    .inferior {
+        margin: 0;
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .grid {
+        position: absolute;
+        top: 5vh;
+        height: 90vh;
+        width: 90vw;
+        flex-direction: column;
+    }
+
+    .grid__input {
+        width: 100%;
+        height: 50%;
+    }
+
+    .grid__input__ventana {
+        position: absolute;
+        left: 12vw;
+        top: 5vh;
+        box-shadow: none;
+        width: 65vw;
+        height: 35vh;
+
+    }
+
+    .grid__input__ventana__top {
+        height: 15%;
+    }
+
+    .grid__input__ventana__top__img {
+        height: 50%;
+        margin-right: 3%;
+    }
+
+    #input {
+        font-size: 2.5vw;
+        height: 85%;
+    }
+
+    #input::placeholder {
+        font-size: 2.5vw;
+    }
+
+    .grid__input__ventana--explosion {
+        display: none;
+    }
+
+    .grid__input__alerta {
+        top: 95%;
+        left: 25vw;
+        height: 10vw;
+        width: 40vw;
+    }
+
+    .grid__input__alerta__logo-externo {
+        width: 11vw;
+        height: 11vw;
+    }
+
+
+    .grid__input__alerta__logo-interno {
+        font-size: 5vw;
+
+    }
+
+
+    .grid__input__alerta__texto {
+        height: 60%;
+        width: 75%;
+    }
+
+    .grid__input__alerta__texto>p {
+        font-size: 2.1vw;
+        padding-left: 2vw;
+    }
+
+    .grid__input__area-botones {
+        top: 52vh;
+        left: 12vw;
+        width: 70%;
+        justify-content: space-around;
+    }
+
+    .grid__input__area-botones--boton {
+        height: 80%;
+        width: 35%;
+        font-size: 2vw;
+
+    }
+
+
+    .grid__output {
+        width: 100%;
+        height: 50%;
+    }
+
+    .grid__output__ventana {
+        position: absolute;
+        top: 58vh;
+        left: 12vw;
+        width: 65vw;
+        height: 25vh;
+
+    }
+
+    .grid__output__ventana__top {
+        display: none;
+    }
+
+    #output {
+        font-size: 2.5vw;
+    }
+
+    .grid__output__area-botones--boton {
+        top: 4vh;
+        font-size: 2.5vw;
+        width: 45vw;
+        height: 5vw;
+    }
+
+    .decoracion--1 {
+        left: 3vw;
+        top: 12vh;
+        width: 5vw;
+        height: auto;
+    }
+
+    .decoracion--2 {
+        left: 80vw;
+        top: 2vh;
+        width: 5vw;
+        height: auto;
+    }
+
+    .decoracion--3 {
+        left: 10vw;
+        top: 52vh;
+        width: 5vw;
+        height: auto;
+    }
+
+    .decoracion--4 {
+        left: 72vw;
+        top: 45vh;
+        width: 5vw;
+        height: auto;
+    }
+
+    .decoracion--5 {
+        left: 4vw;
+        top: 40vh;
+        width: 5vw;
+        height: auto;
+    }
+
+    .decoracion--6 {
+        left: 4vw;
+        top: 70vh;
+        width: 5vw;
+        height: auto;
+    }
+
+    .decoracion--7 {
+        left: 82vw;
+        top: 60vh;
+        width: 5vw;
+        height: auto;
+    }
+}
+
+/* Dispositivos Grandes (escritorios, 992px y más) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .barra__superior__logo {
+        margin-top: 3vw;
+        height: 10vh;
+
+    }
+
+    .barra__superior__smiley {
+        margin-top: 3vw;
+        height: 10vh;
+    }
+
+    .grid {
+        height: 90%;
+    }
+
+    .grid__input__ventana {
+        width: 40vw;
+        height: 38vh;
+        left: 5vw;
+        bottom: 33vh;
+    }
+
+    .grid__input__ventana--explosion {
+        width: 12vw;
+    }
+
+    .grid__input__alerta {
+        top: 60%;
+        left: 25%;
+        width: 28vw;
+    }
+
+    .grid__input__area-botones {
+        left: 27%;
+        top: 75%;
+        gap: 20%;
+
+    }
+
+    .grid__input__area-botones--boton {
+        width: 11vw;
+    }
+
+    .grid__output__ventana {
+        width: 38vw;
+        height: 35vh;
+        left: 10%;
+        top: 22%;
+
+    }
+
+    .decoracion--2 {
+        left: 91vw;
+
+    }
+
+    .decoracion--3 {
+        left: 48vw;
+
+    }
+
+    .decoracion--4 {
+        left: 28vw;
+        top: 35vh;
+
+    }
+
+    .decoracion--5 {
+        left: 49vw;
+
+    }
+
+    .decoracion--6 {
+        left: 50vw;
+        top: 60vh;
+    }
+
+
+    .decoracion--7 {
+        left: 35vw;
+        top: 60vh;
+    }
+
+
+
+
+}
+
+/* Dispositivos X-Grandes (escritorios grandes, 1200px y más) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    .barra__superior__logo {
+        height: 12vh;
+
+    }
+
+    .barra__superior__smiley {
+        height: 12vh;
+    }
+
+    .grid__input__ventana {
+        width: 40vw;
+        left: 5vw;
+        bottom: 30vh;
+    }
+
+    .grid__input__ventana--explosion {
+        width: 12vw;
+    }
+
+    .grid__input__alerta {
+        top: 60%;
+        left: 30%;
+    }
+
+    .grid__input__area-botones {
+        left: 27%;
+
+    }
+
+
+    .grid__output__ventana {
+        width: 38vw;
+        left: 10%;
+
+    }
+
+    .decoracion--2 {
+        left: 91vw;
+
+    }
+
+    .decoracion--3 {
+        left: 48vw;
+
+    }
+
+    .decoracion--4 {
+        left: 28vw;
+        top: 35vh;
+
+    }
+
+    .decoracion--5 {
+        left: 49vw;
+
+    }
+
+}
+
+
+/* Dispositivos XX-Grandes (escritorios más grandes, 1400px y más) (Por Defecto) */
